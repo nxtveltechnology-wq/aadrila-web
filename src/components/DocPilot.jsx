@@ -7,8 +7,8 @@ const DocPilot = () => {
         name: 'DocPilot',
         title: 'Streamline Document Workflows with Automation',
         image: DocPilotImg,
-        badgeGradient: 'bg-gradient-to-r from-orange-500 to-blue-600',
-        buttonColor: 'bg-blue-600 hover:bg-blue-700',
+        badgeGradient: 'bg-gradient-to-r from-[#a05a2c] to-orange-600',
+        buttonColor: 'bg-[#3b5998] hover:bg-[#2d4373]',
         features: [
             'Automates document collection, routing, and task assignments.',
             'Real-time tracking with advanced dashboards.',
