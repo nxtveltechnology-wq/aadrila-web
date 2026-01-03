@@ -2,8 +2,7 @@
 
 <div align="center">
 
-![Aadrila Banner](<img width="1263" height="595" alt="Screenshot 2026-01-04 001030" src="https://github.com/user-attachments/assets/b7ec8891-8ff5-4676-bcb7-7df2a8b429a3" />
-)
+(<img width="1263" height="595" alt="Screenshot 2026-01-04 001030" src="https://github.com/user-attachments/assets/b7ec8891-8ff5-4676-bcb7-7df2a8b429a3" />)
 
 **Intelligent Solutions for Document Processing & Fraud Detection**
 
