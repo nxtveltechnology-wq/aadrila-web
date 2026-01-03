@@ -128,7 +128,7 @@ const Blog = () => {
 
         <div className="relative">
           {/* Slider Container */}
-          <div className="relative overflow-hidden min-h-[450px]">
+          <div className="relative overflow-hidden min-h-[400px]">
              {/* Desktop Grid (3 visible) */}
             <div className="hidden lg:block">
                 <AnimatePresence mode="popLayout" custom={direction} initial={false}>
@@ -167,7 +167,7 @@ const Blog = () => {
            </div>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-center items-center gap-4 mt-12">
+          <div className="flex justify-center items-center gap-4 mt-6">
             <button 
                 onClick={prevSlide}
                 className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#a05a2c] text-white flex items-center justify-center hover:bg-[#8c4f26] transition-all shadow-lg hover:shadow-xl active:scale-95 hover:-translate-y-1 z-20 group"

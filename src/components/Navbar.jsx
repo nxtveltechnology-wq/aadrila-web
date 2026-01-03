@@ -24,8 +24,8 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-999 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-6' : 'bg-transparent py-6'}`}>
-            <div className="container mx-auto px-6 flex justify-between items-center">
+        <nav className={`fixed w-full z-999 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
+            <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Dropdown */}
                 {isOpen && (
-                    <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 md:hidden flex flex-col gap-4 border-t">
+                    <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4 md:hidden flex flex-col gap-4 border-t">
                         {navLinks.map((link) => (
                             <a key={link.name} href={link.href} className="text-gray-600 hover:text-blue-600 font-medium" onClick={() => setIsOpen(false)}>
                                 {link.name}
