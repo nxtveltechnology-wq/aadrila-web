@@ -8,12 +8,12 @@ const Contact = () => {
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* Contact Info */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                    >
+                    > */}
                         <span className="text-[#a05a2c] font-semibold tracking-wider uppercase text-sm bg-[#a05a2c]/10 px-3 py-1 rounded-full">
                             Contact Us
                         </span>
@@ -56,16 +56,16 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    {/* </motion.div> */}
 
                     {/* Contact Form */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                         className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100"
-                    >
+                    > */}
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
@@ -97,7 +97,7 @@ const Contact = () => {
                                 Send Message <Send size={20} />
                             </button>
                         </form>
-                    </motion.div>
+                    {/* </motion.div> */}
                 </div>
             </div>
         </section>

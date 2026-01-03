@@ -9,18 +9,18 @@ const ProductCard = ({
     
     return (
         <div className={`relative flex flex-col ${isImageLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 lg:gap-20`}>
-            <div className={`absolute top-[-50px] ${isImageLeft ? 'left-[-150px]' : 'right-[-150px]'}  `}>
+            <div className={`absolute top-[-50px] ${isImageLeft ? 'left-[-150px]' : 'right-[-150px]'} z-0`}>
             <img src="../assets/reference/circle.png" className='w-[600px]' alt="" />
         </div>
 
-        <div className={`absolute -top-10 ${isImageLeft ? 'left-10' : 'right-10'} w-32 h-32 opacity-20 bg-[radial-gradient(#a05a2c_2px,transparent_2px)] [background-size:16px_16px] pointer-events-none`}>
+        <div className={`absolute -top-10 ${isImageLeft ? 'left-10' : 'right-10'} w-32 h-32 opacity-20 bg-[radial-gradient(#a05a2c_2px,transparent_2px)] [background-size:16px_16px] pointer-events-none z-0`}>
         </div>
             {/* Image */}
             <motion.div
                 initial={{ opacity: 0, x: isImageLeft ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex-1 w-full"
+                className="flex-1 w-full relative z-10"
             >
                 
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
@@ -34,11 +34,11 @@ const ProductCard = ({
                 initial={{ opacity: 0, x: isImageLeft ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex-1"
+                className="flex-1 relative z-10"
             >
                 
                 
-                <div className={`inline-block px-4 py-1.5 rounded-full ${product.badgeGradient} text-white font-semibold text-sm mb-6 shadow-md`}>
+                <div className={`inline-block px-4 py-1.5 rounded-full ${product.badgeGradient} text-white font-semibold text-sm mb-6 shadow-md z-999`}>
                     {product.name}
                 </div>
                 
